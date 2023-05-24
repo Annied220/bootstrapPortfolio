@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+	
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+
+body {
+    background-color:var(--color-base2);
+    font-family:"Bai Jamjuree";
+}
+
+
+h1 {
+    color:#768e93;
+    font-size: 1.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 4rem;
+  }
+
+  
+h2 {
+    font-size: 4rem;
+}
+  
+h3 {
+    font-size: 2.5rem;
+}
+  
+h4{
+    font-size: 1.5rem;
+    color: var(--color-body);
+}
+
+h5 {
+    font-size:1.5rem;
+    color: var(--color-brand);
+}
+
+h6 {
+    font-size:1.2rem;
+    color: var(--color-heading);
+}
+
+p {
+    font-size:16px;
+    font-weight:500;
+    color:white;
+    
+}
+
+  
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+
+
+
+.btn {
+    background-color: var(--color-brand2);
+    color:var(--color-base2);
+    font-weight:700;
+}
+
+
+/* NAVBAR */
+
+.navbar-brand img {
+    /* box-shadow: 2px 8px 18px var(--color-body) */
+    border: 5px solid var(--color-heading)
+
+}
+
+.nav-link, a{
+    color:white;
+    text-transform: uppercase;
+    font-weight:700;
+}
+.navbar-brand {
+    font-weight:700;
+    font-size:1.5rem;
+}
+
+.nav-link:active,
+.nav-link:hover {
+    color: var(--color-brand);
+}
+
+@media (min-width: 992px){
+    .navbar {
+        min-height:100vh;
+        width: var(--sidbar-width);
+        background-image:linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(images/sidebar-img.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #content-wrapper{
+    padding-left: var(--sidbar-width);
+    }
+}
+
+/*End NAVBAR*/
+
+.full-height {
+    min-height: 100vh;
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-top:80px;
+    padding-bottom:80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.home a:hover{
+    color:white;
+}
+
+
+.card {
+    border-radius: 20px;
+}
+
+/* Home*/
+#home img {
+    fill:green;
+    
+}
+
+/*Services*/
+
+.card{
+    background-color:var(--color-base);
+    margin: 0 auto;
+    transition: all .2s ease-in-out; 
+}
+.card:hover{
+    transform: scale(1.1); 
+    border-bottom: 10px solid var(--color-brand2);
+}
+
+.card-icon {
+    margin-left:20px;
+    margin-top:20px;
+    font-size:32px;
+    border-radius:10px;
+}
+
+#services .card-icon .fa{
+    color: var(--color-base2);
+    padding: 15px;
+    background-color: var(--color-brand);
+    border-radius:10px;
+}
+
+
+/*Work*/
+.project-card .card-img {
+    overflow: hidden;
+    height:80vh;
+    border-radius:20px;
+}
+
+#work .project-card {
+    background-color: var(--color-base)
+}
+
+#work .card-title h5 {
+    color: var(--color-heading);
+}
+
+
+
+/*Mobile Screen*/
+@media screen and (max-width: 720px) {
+
+    h1 {
+        font-size: 3rem;
+      }
+    
+      
+    h2 {
+        font-size: 3rem;
+    }
+      
+    h3 {
+        font-size: 2.5rem;
+    }
+      
+    h4{
+        font-size: 1.5rem;
+        color: var(--color-body);
+    }
+    
+    h5 {
+        font-size:1.5rem;
+        color: var(--color-brand);
+    }
+    
+    h6 {
+        font-size:1.2rem;
+        color: var(--color-heading);
+    }
+    
+    p {
+        font-size:16px;
+        font-weight:500;
+        color:white;
+        
+    }
+    .top-spacing {
+        padding-top: 20px;
+    }
+
+    #services .card, #work .card {
+        margin:10px 0px 10px 0px;
+    }
+
+    .project-card .card-img {
+        height:50vh;
+    }
+
+    #lastName {
+        margin-top:15px;
+    }
+}
