@@ -69,6 +69,9 @@ p {
     
 }
 
+button {
+    max-width: 250px;
+}
   
 a {
     text-decoration: none;
@@ -148,6 +151,12 @@ a {
 #home img {
     fill:green;
     
+
+}
+
+#home i {
+    color:#fafafa;
+    margin: 20px;
 }
 
 /*Services*/
@@ -192,6 +201,9 @@ a {
     color: var(--color-heading);
 }
 
+#word img {
+    object-fit:cover;
+}
 
 
 /*Mobile Screen*/
